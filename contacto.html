@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>The beatles</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bannercontacto">
+        <div class="topnav" id="myTopnav">
+        <a href="index.html" >Inicio</a>
+        <a href="tema.html">Tema</a>
+        <a href="equipo.html">Equipo</a>
+        <a href="contacto.html" class="active">Contacto</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</div>
+    <div class="titulo-contacto">
+        <h1>Contacto</h1>
+    </div>
+    
+        <div class="articulo-contacto1">
+
+            <form action="/action_page.php" method="post" name="formulario">
+                <label for="nombre">Nombre</label><br>
+                <input type="text" id="Nombre" name="Nombre"></br>
+                <label for="Email">Email</label><br>
+                <input type="text" id="Email" name="Email"></br>
+                <label for="Mensaje">Mensaje</label><br>
+                <textarea id="Mensaje" name="Mensaje" cols=""></textarea></br>
+                <input type="submit" value="Enviar">
+        </div>
+        </form>
+        <div class="articulo-contacto2">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.6983683649896!2d-0.18338449999999998!3d51.537091999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761a9f655050a7%3A0xad68731942cabda1!2sAbbey%20Rd.%2C%20London%2C%20Reino%20Unido!5e0!3m2!1ses-419!2suy!4v1718663758614!5m2!1ses-419!2suy"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    
+    <div id="footer">
+        <img src="img/logo.png">
+        <h4>Lic. en Diseño de Comunicación Visual</h4>
+        <h5>FADU | UDELAR</h5>
+    </div>
+</div>
+</body>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+</html>
